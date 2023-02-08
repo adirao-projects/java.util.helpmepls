@@ -68,46 +68,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9.1}Decomposition}{33}{section.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Planning}{33}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Planning}{34}{section.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.1}Flowcharts}{33}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.1}Psuedocode}{35}{subsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2.2}Psuedocode}{33}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.2}Flowcharts}{35}{subsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.3}Mathematics}{33}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Mathematics}{35}{section.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Two Camps}{35}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Two Camps}{37}{chapter.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.1}Functional}{35}{section.10.1}%
+\contentsline {section}{\numberline {10.1}Functional}{37}{section.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10.2}Object Oriented}{35}{section.10.2}%
+\contentsline {section}{\numberline {10.2}Object Oriented}{37}{section.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Functional Programming Crash Course}{37}{chapter.11}%
+\contentsline {chapter}{\numberline {11}Functional Programming Crash Course}{39}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Object Oriented Programming Crash Course}{39}{chapter.12}%
+\contentsline {chapter}{\numberline {12}Object Oriented Programming Crash Course}{41}{chapter.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Classes, Methods, and Objects}{39}{section.12.1}%
+\contentsline {section}{\numberline {12.1}Classes, Methods, and Objects}{41}{section.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}Inheritance}{39}{section.12.2}%
+\contentsline {section}{\numberline {12.2}Inheritance}{41}{section.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Encapsulation}{39}{section.12.3}%
+\contentsline {section}{\numberline {12.3}Encapsulation}{41}{section.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.4}Abstraction}{39}{section.12.4}%
+\contentsline {section}{\numberline {12.4}Abstraction}{41}{section.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.5}Polymorphism}{39}{section.12.5}%
+\contentsline {section}{\numberline {12.5}Polymorphism}{41}{section.12.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Hello World!}{41}{chapter.13}%
+\contentsline {chapter}{\numberline {13}Hello World!}{43}{chapter.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.1}Where do I go from here?}{41}{section.13.1}%
+\contentsline {section}{\numberline {13.1}Where do I go from here?}{43}{section.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{41}{section.13.2}%
+\contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{43}{section.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.2.1}Algorithms and Math}{41}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.1}Algorithms and Math}{43}{subsection.13.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Formal Logic}{41}{section*.2}%
+\contentsline {subsubsection}{Formal Logic}{43}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Linear Algebra}{41}{section*.3}%
+\contentsline {subsubsection}{Linear Algebra}{43}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.2.2}Networking}{41}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.2}Networking}{43}{subsection.13.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {13.2.3}Data Analysis}{41}{subsection.13.2.3}%
+\contentsline {subsection}{\numberline {13.2.3}Data Analysis}{43}{subsection.13.2.3}%
