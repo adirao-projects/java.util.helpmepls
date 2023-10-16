@@ -3,33 +3,59 @@
 \usepackage{setspace} 
 \doublespacing
 \usepackage{float}
+\usepackage[]{geometry}
 \setlength{\parindent}{0in}
 \restylefloat{table}
 
 %Mathematics
-\usepackage[]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{tocloft}
+\usepackage{xcolor}
 
+\definecolor{commentsColor}{rgb}{0.497495, 0.497587, 0.497464}
+\definecolor{keywordsColor}{rgb}{0.541176, 0.168627, 0.886275}
+\definecolor{stringColor}{rgb}{0.000000, 0.558215, 0.135316}
 %Computer Science
 \usepackage{listings}
 \lstset
 { %Formatting for code
-	basicstyle=\footnotesize,
+	basicstyle=\footnotesize\ttfamily,
 	numbers=left,
 	stepnumber=1,
 	showstringspaces=false,
 	tabsize=1,
 	breaklines=true,
-	breakatwhitespace=false
+	breakatwhitespace=false,
+	frame=lines,
+	xleftmargin=2em,
+	framexleftmargin=1.5em,
+	commentstyle=\color{commentsColor}\ttfamily,
+  	stringstyle=\color{stringColor}\ttfamily,
+	keywordstyle=\color{keywordsColor}\bfseries,
 }
 
-\usepackage{algorithm}
-\usepackage{algorithmic}
+
+
+% \lstdefinelanguage{psuedocode}{
+%   keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+%   keywordstyle=\color{blue}\bfseries,
+%   ndkeywords={class, export, boolean, throw, implements, import, this},
+%   ndkeywordstyle=\color{darkgray}\bfseries,
+%   identifierstyle=\color{black},
+%   sensitive=false,
+%   comment=[l]{//},
+%   morecomment=[s]{/*}{*/},
+%   commentstyle=\color{purple}\ttfamily,
+%   stringstyle=\color{red}\ttfamily,
+%   morestring=[b]',
+%   morestring=[b]"
+% }
+
+\usepackage{algpseudocodex}
 
 %Book Stuff
 \newenvironment{dedication}
@@ -71,14 +97,14 @@
 \begin{document}
 	\title{java.util.helpmepls \\
 	\large{\textit{Learning to Code from a Subpar Programmer}}}
-	\author{Aditya Rao}
-	\date{\today}
+	\author{Aditya K. Rao}
+	\date{\texttt{Last Edited: \today}}
 	\maketitle
 	
 	
 	\begin{dedication}
-		%``For anyone that wants to learn how to code or something''
-		``Dedicated to Arnav's fat juicy ass''
+		``For anyone that wants to learn how to code or something''
+		%``Dedicated to Arnav's fat juicy ass''
 		\par   %% or a blank line
 		%\vspace{2\baselineskip}
 		
@@ -227,13 +253,18 @@
 			, I also love \textit{VS Code}\footnote{\url{https://code.visualstudio.com/}} for most other languages (and some python as well). If you're just getting started and just want to play around a bit, you can use the basic Python IDE.
 		\section{New file}
 			%Provide examples in python and in java
+		\section{Datatypes}
+			\subsection{Primitaves}
+				% Integers, Floating point, Booleans, Strings
+			\subsection{Basic Non-Primitaves}
+				% Lists, Tuples, Sets, Dictionaries
 		\section{if, then, else}
 			\textit{If} conditions make up the inner workings of conditional logic. The idea behind them is very simple: if a certain property is true then do a certain task. In other words, if the answer to a question is yes, then you get a certain response.
 			\\\\
 			no
-			\begin{algorithm}
-				%Algorithm goes here
-			\end{algorithm}
+			% \begin{algorithm}
+			% 	%Algorithm goes here
+			% \end{algorithm}
 			%\lstinputlisting[language=python]{C:/Users/Aditya Rao/Desktop/Misc/The Definitive Guide to Beginning to Code/code_examples/chapter_4/if_then_else.py}
 			%\lstinputlisting[language=java]{C:/Users/Aditya Rao/Desktop/Misc/The Definitive Guide to Beginning to Code/code_examples/chapter_4/if_then_else.py}
 		\section{for and while}
@@ -258,19 +289,79 @@
 		\section{Arrays}
 			Arrays are like lists but are generally of set length and data type.
 		\section{Tuples}
-			Tuples in Python are like lists, however, they're completely immutable. This means that they \textit{cannot be changed}; once they data they're initialized is in them, they cannot be changed.
+			Tuples in Python are like lists, however, they're completely immutable. This means that they \textit{cannot be changed}; once they data they're initialized is in them, they cannot be changed. In order to create a list we simple use parentheses ``()''. T
+			
+			\lstinputlisting[language=python]{code_examples/chapter_5/tuple.py}
+			
+			There are many reasons as to why we'd use a tuple over an array or list. While they may be less functional (they have fewer built in extra functions), they do take up less memory and are decently faster for large data. This is mainly because they're \textbf{immutable}. Additionally, as we'll see in the next section (\ref{sec:dictionary}), we can use tuples as keys in the dictionary. We cannot do this with lists.
+
 		\section{Dictionary}
 			This is just an implementation of a more complex datastructure called a hashmap. Hashmaps essentially take a \textbf{key} and associate them with a specific \textbf{value}.
 			
+		\section{Advanced Data-structures}
+			\subsection{Linked Lists}
+
+			\subsection{Stacks}
+
+			\subsection{Queues}
+
+			\subsection{Trees}
+				\subsubsection{Binary Trees}
+
+				\subsubsection{Binary Search Trees}
+
+				\subsection{Heap}
+
+			\subsection{Hashmaps}
+
+			\subsection{Matrix}
+
+
 	\chapter{Simple Algorithms}
-		%Sorting - Selection Sort; Bubble Sort; Insertion Sort
-		%Searching - Linear Search; Binary Search
-		%Time Complexity
+		\section{Sorting}
+			\subsection{Selection Sort}
+
+			\subsection{Bubble Sort}
+
+			\subsection{Insertion Sort}
+
+			\subsection{Quick Sort}
+
+		\section{Searching}
+			\subsection{Linear Search}
+
+			\subsection{Binary Search}
+
+		\section{Intro to Basic Time Complexity}
+			This bit may confuse a lot of people. In my opinion, it's definetly one of the harder concepts to pickup and it took me a while to gian an intuition on it. While you don't necessarily need to know this in order to learn how to code, it is quite useful in your coding literacy. This is primarily because when you learn the language of big-O notation, you learn how to read the efficiency of algorithms and, by extention, how to critque your own work and make it better.
+			
 		
 	\chapter{Practicing the basics}	
 		In order to get the hang of anything, I believe the best way to go about anything is to practice by actually implementing and applying the things you learnt. Therefore, I have provided a few practice projects in this chapter.
 		\section{Calculator}
-			
+			Building a basic calculator, in my opionion, will get you well aquainted with the absolute basics of any language. By expanding on calculator base, you can start to learn about more sophisticated features such as functional and even object oriented programming. In the appendix, I have provided my approaches to different design concepts.
+			\\\\
+			To start with applying conditional logic (``if-statements''), I first want you to take an input 
+			asking the user what type of operation they want to do.
+			%\lstsinputlisting[language=psuedo]{code_examples/chapter_7/calculator_1.txt}
+			\lstinputlisting[language=python]{code_examples/chapter_7/calculator_1.py}
+			% \begin{algorithm}
+			% 	number1 = \texttt{INPUT:} ``Input your first number'' \\
+			% 	number2 = \texttt{INPUT:} ``Input your second number'' \\
+			% 	operation = \texttt{INPUT:} ``What type of operation do you want to do: Add(1), Subtract(2), Multiply(3), or Divide(4)?'' \\
+			% 	\eIf{operation=1}{
+			% 		answer = $\text{number1} + \text{number2}$
+			% 	} \eIf{operation=2} {
+			% 		answer = $\text{number1} - \text{number2}$
+			% 	} \eIf{operation=3} {
+			% 		answer = $\text{number1} \times \text{number2}$
+			% 	} \eIf{operation=2} {
+			% 		answer = $\text{number1} \div \text{number2}$
+			% 	} {
+			% 		\texttt{OUTPUT:} ``Invalid operation''
+			% 	}
+			% 	\texttt{OUTPUT:} answer
+			% \end{algorithm}
 		\section{Chatbot}
 			
 		\section{Management System}
@@ -278,7 +369,11 @@
 		\section{Task Planner}
 			
 	\chapter{Learning some techniques}
-	
+		\section{Naming Conventions}
+		
+		\section{Error Analysis}
+
+		\section{Packages}
 	
 	\chapter{Logical Thinking}
 		One of the most important reasons to learn how to code is logical thinking and breaking down problems. Traditionally, when you're taught how to code, you're like a computer in itself in the sense that your instructor gives you instructions and you are expected to execute them.Q
@@ -303,7 +398,7 @@
 			\subsection{Flowcharts}
 				
 		\section{Mathematics}
-			
+	
 	\chapter{Two Camps}
 		\section{Functional}
 			
@@ -335,4 +430,6 @@
 				
 			\subsection{Data Analysis}
 				Sentdex
+	\appendix
+	\chapter{Suplemental Code}
 \end{document}

@@ -1,0 +1,13 @@
+NUMBER1 = input "Input your first number"
+NUMBER2 = input "Input your second number"
+OPERATION = input "What type of operation do you want to do: Add(1), Subtract(2), Multiply(3), or Divide(4)?" 
+if OPERATION=1 :
+	ANSWER = NUMBER1 + NUMBER2
+else if OPERATION=2
+	ANSWER = NUMBER1 - NUMBER2
+else if OPERATION=3
+	ANSWER = NUMBER1 * NUMBER2
+else if OPERATION
+	ANSWER = NUMBER1 / NUMBER2
+	output "Invalid operation"
+output ANSWER
