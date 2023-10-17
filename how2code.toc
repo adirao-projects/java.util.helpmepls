@@ -57,26 +57,28 @@
 \contentsline {section}{\numberline {8.3}Packages}{33}{section.8.3}%
 \contentsline {chapter}{\numberline {9}Logical Thinking}{35}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Decomposition}{35}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Planning}{36}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Psuedocode}{37}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Flowcharts}{37}{subsection.9.2.2}%
-\contentsline {section}{\numberline {9.3}Mathematics}{37}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Two Camps}{39}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Functional}{39}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Object Oriented}{39}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Functional Programming Crash Course}{41}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Object Oriented Programming Crash Course}{43}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Classes, Methods, and Objects}{43}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Inheritance}{43}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Encapsulation}{43}{section.12.3}%
-\contentsline {section}{\numberline {12.4}Abstraction}{43}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Polymorphism}{43}{section.12.5}%
-\contentsline {chapter}{\numberline {13}Hello World!}{45}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Where do I go from here?}{45}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{45}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Algorithms and Math}{45}{subsection.13.2.1}%
-\contentsline {subsubsection}{Formal Logic}{45}{section*.4}%
-\contentsline {subsubsection}{Linear Algebra}{45}{section*.5}%
-\contentsline {subsection}{\numberline {13.2.2}Networking}{45}{subsection.13.2.2}%
-\contentsline {subsection}{\numberline {13.2.3}Data Analysis}{45}{subsection.13.2.3}%
-\contentsline {chapter}{\numberline {A}Suplemental Code}{47}{appendix.A}%
+\contentsline {subsection}{\numberline {9.1.1}Alarm Clock Example}{37}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Morning Routine Example}{40}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}Planning}{44}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Psuedocode}{45}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Flowcharts}{45}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}Mathematics}{45}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Two Camps}{47}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Functional}{47}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Object Oriented}{47}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Functional Programming Crash Course}{49}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Object Oriented Programming Crash Course}{51}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Classes, Methods, and Objects}{51}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Inheritance}{51}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Encapsulation}{51}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Abstraction}{51}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Polymorphism}{51}{section.12.5}%
+\contentsline {chapter}{\numberline {13}Hello World!}{53}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Where do I go from here?}{53}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{53}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Algorithms and Math}{53}{subsection.13.2.1}%
+\contentsline {subsubsection}{Formal Logic}{53}{section*.4}%
+\contentsline {subsubsection}{Linear Algebra}{53}{section*.5}%
+\contentsline {subsection}{\numberline {13.2.2}Networking}{53}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}Data Analysis}{53}{subsection.13.2.3}%
+\contentsline {chapter}{\numberline {A}Suplemental Code}{55}{appendix.A}%

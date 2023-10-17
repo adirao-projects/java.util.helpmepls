@@ -1,15 +1,16 @@
 # Fdb version 4
-["bibtex how2code"] 1697490014 "how2code.aux" "how2code.bbl" "how2code" 1697490020 0
-  "./how2code-blx.bib" 1697490018 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+["bibtex how2code"] 1697511167 "how2code.aux" "how2code.bbl" "how2code" 1697511170 0
+  "./how2code-blx.bib" 1697511169 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "C:/MiKTex/bibtex/bst/biblatex/biblatex.bst" 1679055682 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "how2code.aux" 1697490018 13199 e6232dd7250aef4ecc113132e0fae5eb "pdflatex"
+  "how2code.aux" 1697511169 14716 fce0a2eaf5d3b4d2ed9c94e926c3cc9c "pdflatex"
   "sources.bib" 0 -1 0 ""
   (generated)
   "how2code.bbl"
   "how2code.blg"
   (rewritten before read)
-["pdflatex"] 1697490014 "c:/Users/Admin/Desktop/Projects/java.util.helpmepls/how2code.tex" "how2code.pdf" "how2code" 1697490020 0
+["pdflatex"] 1697511167 "c:/Users/Admin/Desktop/Projects/java.util.helpmepls/how2code.tex" "how2code.pdf" "how2code" 1697511170 0
   "C:/MiKTex/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
+  "C:/MiKTex/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/MiKTex/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/MiKTex/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/MiKTex/fonts/tfm/public/amsfonts/euler/eurm10.tfm" 1233955452 1228 9be37fdf0dc0e1f4df4af3594876d628 ""
@@ -40,6 +41,7 @@
   "C:/MiKTex/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1247596667 36554 b67dc2cfa451409e100b3fcf5f506509 ""
+  "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
@@ -211,17 +213,18 @@
   "C:/MiKTex/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1697142249 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1696950220 28440 44fcee712300c87d2211b1b754a26a9a ""
+  "C:/Users/Admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1697489535 14064 3b5ce56cd40ce09d5b41da8169a9df5c ""
   "C:/Users/Admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1696949965 24125494 b715b8c59e824503b1c1045ac339d6dd ""
-  "c:/Users/Admin/Desktop/Projects/java.util.helpmepls/how2code.tex" 1697489995 29882 c33571b5fd03e8d29ad878cab0adc995 ""
+  "c:/Users/Admin/Desktop/Projects/java.util.helpmepls/how2code.tex" 1697511159 37441 e21303d66d8f331aa08e67832b526c52 ""
   "code_examples/chapter_5/list.py" 1697488352 276 ae6b45a717ef2f7c57c1f0e52b779e39 ""
   "code_examples/chapter_5/tuple.py" 1697488342 277 85f7f8186cf8e43da305eb5e0e05b16d ""
   "code_examples/chapter_7/calculator_1.py" 1696951484 536 8716dace13a6ee44b976440b897b9e74 ""
-  "how2code.aux" 1697490018 13199 e6232dd7250aef4ecc113132e0fae5eb "pdflatex"
+  "how2code.aux" 1697511169 14716 fce0a2eaf5d3b4d2ed9c94e926c3cc9c "pdflatex"
   "how2code.bbl" 1696948215 532 da5a5cf020c0fbcb3437098fa3006702 "bibtex how2code"
-  "how2code.out" 1697490018 10319 1e0e97d711c37904f279bdab1a135ac5 "pdflatex"
-  "how2code.run.xml" 1697490018 2602 576e84376e73d3b8cde287a7402558c0 "pdflatex"
-  "how2code.tex" 1697489995 29882 c33571b5fd03e8d29ad878cab0adc995 ""
-  "how2code.toc" 1697490018 6379 0f79772668dbf3eb67045b66a474756c "pdflatex"
+  "how2code.out" 1697511169 10665 d3539f3c4a1fa3dfa7780d0ee398fa71 "pdflatex"
+  "how2code.run.xml" 1697511169 2602 576e84376e73d3b8cde287a7402558c0 "pdflatex"
+  "how2code.tex" 1697511159 37441 e21303d66d8f331aa08e67832b526c52 ""
+  "how2code.toc" 1697511169 6563 940325fa7e9591b5b6ac4f474bdaa49f "pdflatex"
   (generated)
   "how2code-blx.bib"
   "how2code.aux"

@@ -121,7 +121,7 @@
 	%\textit{For all those people who asked me what course I used to learn how to code, I hope this helps make your journey easier}
 	
 	%\newpage
-	\chapter*{Prologue/Introduction}
+	\chapter*{Prologue/Introduction}  \label{chap:intro}
 		Hi there, my name is Adi. At the time of writing this book, I recently have graduated from highschool and am on my way to university soon. Over the last four or five years, I've developed a deep interest in the ever elusive world of code. My main language is Python but I've recently diversified into many other avenues like Java, JavaScript, HTML, CSS, C++, Dart, and a few others. However, Python is definitely the language I have the most experience in. As such, that will be the basis for most of the actual code snippets in this book. I will also provide a few examples in psuedocode whenever I do something in a certain language. 
 		\\\\
 		I don't consider myself to be any authority on Computer Science/Engineering or anything like that, I'm just a guy who thinks he's got a decent method to help some people pursue their interests. My objective with this book is not really to help you learn a certain language, rather, it gives you the tools and knowledge to help you learn whatever language you want.
@@ -131,7 +131,8 @@
 		Therefore, these are the topics that we'll delve into in this instructional guide. First, we'll start with why you should be interested in code. Next, we'll progress into what coding actual is. Then, we'll take a turn and look at the inner workings of a computer and what components like the CPU and RAM actually do and how a computer understands the instructions that you give it. Then we'll learn some of the basics of any major high-level programming language (examples will be given in \textit{Python, Java, and psuedocode}) and techniques to go along with it. Lastly, we'll go into some of the most important skills for a coder, the way you need to think about problems. This is by far the most important - and one of the most overlooked - skills that you develop when programming.
 		\\\\
 		From there, we'll go over the future and some good resources to look at to progress your skills past what you have been taught here. Good luck on your coding journey.
-	\chapter{Why learn how to code}
+
+	\chapter{Why learn how to code}  \label{chap:why-code}
 		There are a variety of reasons why one would want to learn how to code. First and foremost, ever second, there are millions of developers around the world trying to automate something new. Everyone is searching for problems to try and solve - every hour of every day. That means that by not learning how to code, you may be putting yourself on the back-foot as it's a skill more and more employers are looking for in candidates.
 		\section{Interest}
 			For a lot of us, personal interest is what's motivating us to learn how to code. You could be intrigued by the software side and how a machine can be controlled and worked with to do what you want. Essentially, we wanted to see how we make a computer go bleep bloop using words.
@@ -139,7 +140,8 @@
 			You may be looking for a new route in your education career. Coding is a skill that can help you in almost any field. Even something like history where you almost definitively will not be writing any code, skills like Decomposition will help you breakdown your tasks and methodically complete them. 
 		\section{Freedom}
 			The last opportunity that coding gives you is freedom. In our technology enhanced world almost everything is in some way shape or form dependent on some sort of tech. If you want to start a business or some sort of initiative, tech skills can help you start your concept, be a better manager by understanding the work being conducted, or by simply allowing you to automate monotonous tasks giving you more time to do what you want.
-	\chapter{What is coding?}
+
+	\chapter{What is coding?}  \label{chap:intro-coding}
 		What actually is coding? Many people don't seem to understand what someone who  codes actually does. We've all seen those scenes in movies and TV shows where the protagonist (or antagonist) says a bunch of tech words, sometimes throws a "quantum" or two in there for good measure, and then how is able to stop a software nuke (whatever that is) from annihilating downtown Brooklyn. It's not nearly as glamours. When you code, you're simply giving instructions that a machine can understand and execute.
 		\\\\
 		Now, the machine doesn't actually understand the words you write, instead it translates them into machine code/language. This is essentially a giant list of Ones and Zeros which the computer can use to turn switches off and on. That's basically how a computer works - turning switches off an on - zero and one.
@@ -149,7 +151,8 @@
 		That is all that coding is, giving a machine a set of instructions and hopeing it does what you want. My friend likes to joke around, saying that ``Computer Science should be considered an experimental science'' because it can be mostly trial and error at times as you try to figure out how something works. 
 		\\\\
 		There are a few different types of coders: front-end and back-end. There are of course a few other flavors - i.e. mobile and game development - but these are the two most prominent ones. By no means do you have to stick to one once you choose it, but the skill sets for each are quite different. A front-end developer are generally people who focus on the \textbf{user experience} aka \textbf{UX} and \textbf{user interface} aka \textbf{UI}. If you're look at a website, that's typically the work of a front-end developer. On the flip side, we have back-end developers. Back-end developers are responsible for delivering content and internal logic of how some system works. For example, if you login to a website the process by which your account is authenticated and validated is the work of a back-end developer.
-	\chapter{How does a computer work?}
+
+	\chapter{How does a computer work?}  \label{chap:computers}
 		Knowing how a computer works is what separates the good from the great. When you understand how a computer works you, it's easier to make code more efficient and understand how your code works on the lower-levels (machine and assembly language).
 		\section{Ones and Zeros}
 			When you write code, you're essentially writing a bunch of words which get turned into 0s and 1s. These 0s and 1s subsequently are used to tell the computer whether to turn a switch on or off (also known as high or low as if the switch is \textit{on} then a \textit{higher} current is sent across the wire and vice versa). This number system is known as \textit{binary} or \textit{base-2}. On the other hand, our number system is called \textit{decimal} or \textit{base-10} because we have 10 digits (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9).
@@ -245,7 +248,7 @@
 			All the subsystems in a Von-Neuman system are interconnected by data highways called "buses." There are 3 primary buses that you need to be concerned with: the "data" bus, the "address" bus, and the  "control" bus.
 			\\\\
 			These buses are either uni-directional (only send data 1 way), bi-directional (send data both ways), or the can be both depending on the context.
-	\chapter{Starting with the basics}
+	\chapter{Starting with the basics}  \label{chap:basics}
 		\section{Getting started}
 			This part is pretty simple but is important. You need to download your language of choice and get an IDE (Integrated Development Environment) or an editor of some sort - the second part isn't required, but is definitely good for quality of life.
 			\\\\
@@ -270,7 +273,7 @@
 		\section{for and while}
 		\section{functions}
 		
-	\chapter{Data-structures}
+	\chapter{Data-structures}  \label{chap:datastructures}
 		One crucial aspect to all programming languages is the data structures that they have to offer. We'll specifically look at Python and Java, however, these sometiems vary based on different  languages.
 		\section{Mutable vs Immutable}
 			The first important thing to understand is mutability. In short, an \textbf{immutable} data structure/type is \textit{unable to be changed}. Conversely, a \textbf{mutable} data structure/type can be changed.
@@ -317,7 +320,7 @@
 			\subsection{Matrix}
 
 
-	\chapter{Simple Algorithms}
+	\chapter{Simple Algorithms} \label{chap:simple-algorithms}
 		\section{Sorting}
 			\subsection{Selection Sort}
 
@@ -336,7 +339,7 @@
 			This bit may confuse a lot of people. In my opinion, it's definetly one of the harder concepts to pickup and it took me a while to gian an intuition on it. While you don't necessarily need to know this in order to learn how to code, it is quite useful in your coding literacy. This is primarily because when you learn the language of big-O notation, you learn how to read the efficiency of algorithms and, by extention, how to critque your own work and make it better.
 			
 		
-	\chapter{Practicing the basics}	
+	\chapter{Practicing the basics}	\label{chap:basics-practice}
 		In order to get the hang of anything, I believe the best way to go about anything is to practice by actually implementing and applying the things you learnt. Therefore, I have provided a few practice projects in this chapter.
 		\section{Calculator}
 			Building a basic calculator, in my opionion, will get you well aquainted with the absolute basics of any language. By expanding on calculator base, you can start to learn about more sophisticated features such as functional and even object oriented programming. In the appendix, I have provided my approaches to different design concepts.
@@ -368,24 +371,232 @@
 			
 		\section{Task Planner}
 			
-	\chapter{Learning some techniques}
+	\chapter{Learning some techniques}  \label{chap:techniques}
 		\section{Naming Conventions}
-		
+
 		\section{Error Analysis}
 
 		\section{Packages}
 	
-	\chapter{Logical Thinking}
+	\chapter{Logical Thinking}  \label{chap:logical-thinking}
 		One of the most important reasons to learn how to code is logical thinking and breaking down problems. Traditionally, when you're taught how to code, you're like a computer in itself in the sense that your instructor gives you instructions and you are expected to execute them.Q
 		\section{Decomposition}
 			One of the key ideas on computer science is operationalization or the decomposition of ideas. At the end of the day computer science is about solving problems. Solving a big complicated problem is just that - complicated. Therefore it becomes important that we break down big problems into smaller ones, then break those into even smaller ones, and so on. Essentially, we want a problem so simple that it's almost as easy as writing a function or even a single line of code.
 			\\\\
-			This is probably the most idea in learning computer science because it applies to life as a whole. If there is one take away in your learning computer science, let it be this.
+			This is probably the most importnat ideas in learning computer science because it applies to life as a whole. If there is one take away in your learning computer science, let it be this.
 			\\\\
 			Decomposition is a hard skill to learn, but is not difficult to master. It all boils down to practice. Hence, we will first through the ``theory'' on how to break an idea down. Then go through a few lay examples and then finally finish off with technical examples.
 			\\\\
-			%Theory of decomposition
+			To \textit{decompose} a problem/system, we need to think of all the smaller problems/systems it's made up of. For example, take the simple equation below.
+
+			\begin{equation*}
+				50x + 10 = 60
+			\end{equation*}
+
+			Here, to decompose the problem and solve for $x$, we need to do the following operations:
+
+			\begin{enumerate}
+				\item Isolate Variable ($x$ should be on one side alone)
+				\item Simplify problem
+				\item Solve for $x$
+			\end{enumerate}
 			
+			Therefore, we've decomposed the problem. Now lets put this into action
+
+			\begin{align*}
+				50x + 10 &= 60 \\
+				\text{Step 1}:& \\
+				50x + 10 - 10 &= 60 - 10 \\
+				\implies 50x &= 60 - 10 \\
+				\text{Step 2}:& \\
+				\implies 50x &= 50 \\
+				\text{Step 3}:& \\
+				\implies x &= 1 \\
+			\end{align*}
+			Hence, we have used decomposition for a simple example. Say now we move on to a more complicated case. \\
+			\\
+			Say we need to code an alarm clock. There are a lot of functionality we need to think about. A good exercise is to give this a shot yourself before reading further. 
+
+			\subsection{Alarm Clock Example}
+				Say we have an alarm clock. At a high level, an alarm clock must perform the following functions:
+				\begin{itemize}
+					\item Alarm
+					\item Time
+				\end{itemize}
+
+				These can further be decomposed into the following
+				
+				\begin{itemize}
+					\item Alarm 
+						\begin{itemize}
+							\item Sound Alarm
+							\item Change Alarm Time
+							\item Snooze Alarm
+							\item Alarm Volume
+						\end{itemize}
+					\item Time
+						\begin{itemize}
+							\item Show Time
+							\item Change Time
+							\item Update Time (every minuete)
+						\end{itemize}
+				\end{itemize}
+
+				This should be enough for us to start writing our code. However, say these smaller tasks are still to complicated, we can go ahead and start decomposing these smaller problems even more:
+				\begin{itemize}
+					\item Alarm 
+						\begin{itemize}
+							\item Sound Alarm
+								\begin{itemize}
+									\item Compare current time to alarm time
+									\item Send output to activate speaker to start alarm
+									\item Get button input to stop alarm
+								\end{itemize}
+							\item Change Alarm Time
+								\begin{itemize}
+									\item Get Button Input
+									\item Get dial input to change time
+									\item Set dial input and change alarm time internally
+									\item Lock alarm time until changed again
+								\end{itemize}
+							\item Snooze Alarm
+								\begin{itemize}
+									\item $\cdots$
+								\end{itemize}
+							\item Alarm Volume
+								\begin{itemize}
+									\item $\cdots$
+								\end{itemize}
+						\end{itemize}
+					\item Time
+						\begin{itemize}
+							\item Show Time
+								\begin{itemize}
+									\item $\cdots$
+								\end{itemize}
+							\item Change Time
+								\begin{itemize}
+									\item $\cdots$
+								\end{itemize}
+							\item Update Time (every minuete)
+							\begin{itemize}
+								\item $\cdots$
+							\end{itemize}
+						\end{itemize}
+				\end{itemize}
+
+				And we can continue doing this on and on until we get to a set of tasks which are easy enough for us to solve and implement directly. \\
+				\\
+		\subsection{Morning Routine Example}
+			Now lets do another example unrelated to Mathematics or Computer Science. Say we need to organize our daily routine and make an indepth checklist as to what we need to do.
+			\begin{itemize}
+				\item Wake Up
+				\item Organize Room
+				\item Get Ready
+				\item Eat Breakfast
+				\item Leave for work/school
+			\end{itemize}
+			These are our high-level tasks, now lets decompose them:
+			\begin{itemize}
+				\item Wake Up
+					\begin{itemize}
+						\item Set alarm the night before
+						\item Open eyes, turn on lights
+						\item Get out of bed
+						\item Turn off alarm
+						\item Don't go back to sleep (I struggle with this one some times)
+					\end{itemize}
+				\item Organize Room
+					\begin{itemize}
+						\item Make bed
+						\item Put out clothes for the day
+						\item Collect daily items (i.e. bag)
+					\end{itemize}
+				\item Get Ready
+					\begin{itemize}
+						\item Go to bathroom and take a shower
+						\item Dry off and put on clothes
+						\item Put on socks and shoes
+					\end{itemize}	
+				\item Eat Breakfast
+					\begin{itemize}
+						\item Make breakfast
+						\item Get utensils
+						\item Make coffee
+						\item Eat food that your made
+						\item Drink coffee
+					\end{itemize}
+				\item Leave for work/school
+			\end{itemize}
+
+			Notice that there are still some tasks which may not be simple enough while there are others which are just at the right level of simplificiation. Hence, let's do one more decomposition pass.
+		
+			\begin{itemize}
+				\item Wake Up
+					\begin{itemize}
+						\item Set alarm the night before
+						\item Open eyes, turn on lights
+						\item Get out of bed
+						\item Turn off alarm
+						\item Don't go back to sleep (I struggle with this one some times)
+					\end{itemize}
+				\item Organize Room
+					\begin{itemize}
+						\item Make bed
+							\begin{itemize}
+								\item Flatten base cover
+								\item Retuck sheet
+								\item Fold duvet and place at foot of bed
+								\item Put pillows at head of bed 
+								\item Organize any other misc items
+							\end{itemize}
+						\item Put out clothes for the day
+						\item Collect daily items (i.e. bag)
+							\begin{itemize}
+								\item Get wallet
+								\item Get phone
+								\item Pack bag (if not already packed)
+								\item Get bag
+								\item Get keys
+								\item Get jacket (if going to rain or raining)
+							\end{itemize}
+					\end{itemize}
+				\item Get Ready
+					\begin{itemize}
+						\item Go to bathroom and take a shower
+						\item Dry off and put on clothes
+						\item Put on socks and shoes
+					\end{itemize}	
+				\item Eat Breakfast
+					\begin{itemize}
+						\item Make Breakfast
+							\begin{itemize}
+								\item Decide on breakfast (say eggs with toast)
+								\item Get pan
+								\item Heat up pan
+								\item Get eggs
+								\item Get spices
+								\item Get oil
+								\item Put oil in pan
+								\item Put eggs in pan
+								\item Add spices
+								\item Cook eggs as desired
+								\item Get plate
+								\item Put eggs on plate
+								\item Get toaster
+								\item Put toast in toster
+								\item Put toast on plate
+							\end{itemize}
+						\item Get utensils
+						\item Make coffee
+						\item Eat food that your made
+						\item Drink coffee
+					\end{itemize}
+				\item Leave for work/school
+			\end{itemize}
+
+			Notice that as we decompose some of our steps start to look like steps. That means we're transitioning from breaking down our problem to actually solving it. Hence, in the above example, the ``Make breakfast'' tasks would actually be better suited to \hyperref[sec:psuedocode]{\texttt{psuedocode}} or a \hyperref[sec:flowchart]{\texttt{flowchart}}, both of which we will explore in the next section.
+
 		\section{Planning}
 			We can now take this idea of decomposition further and use it in planning. There are two primary ``formal'' methods we will cover - Psuedocode and Flowcharts. Both are important in different ways. The former allows use to \textit{specifically} write out the logic of our code and how it works without committing it to a specific language instead being written in an English-adjacent language called pseudocode. While there are no universally specific guidelines for writing psuedocode, I will outline some traditionally accepted practices.
 			\\\\
@@ -393,20 +604,20 @@
 			\\\\
 			The overall objective of this chapter is to give you and introduction to both of these planning tools. Probably they're most important purpose is not solely helping you understand your code more but also helping others understand your work. Therefore, these methods greatly help with collaboration on bigger projects (which to many people's disdain, you're probably going to have to do eventually if you plan on doing almost anything meaningful).
 			
-			\subsection{Psuedocode}
+			\subsection{Psuedocode} \label{sec:psuedocode}
 			
-			\subsection{Flowcharts}
+			\subsection{Flowcharts} \label{sec:flowchart}
 				
 		\section{Mathematics}
 	
-	\chapter{Two Camps}
+	\chapter{Two Camps}  \label{chap:intro-functional-oops}
 		\section{Functional}
 			
 		\section{Object Oriented}
 			
-	\chapter{Functional Programming Crash Course}
+	\chapter{Functional Programming Crash Course} \label{chap:crash-functional}
 		
-	\chapter{Object Oriented Programming Crash Course}
+	\chapter{Object Oriented Programming Crash Course} \label{chap:oops}
 		\section{Classes, Methods, and Objects}
 			
 		\section{Inheritance}
@@ -417,7 +628,7 @@
 			
 		\section{Polymorphism}
 		
-	\chapter{Hello World!}
+	\chapter{Hello World!} \label{chap:hello-world}
 		\section{Where do I go from here?}
 		\section{Topic/resources to look into (by subject area)}
 			\subsection{Algorithms and Math}
@@ -430,6 +641,6 @@
 				
 			\subsection{Data Analysis}
 				Sentdex
-	\appendix
-	\chapter{Suplemental Code}
-\end{document}
+	\appendix 
+	\chapter{Suplemental Code} \label{chap:apdx-sup-code}
+\end{document}s
