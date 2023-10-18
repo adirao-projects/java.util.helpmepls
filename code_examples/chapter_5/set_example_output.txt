@@ -1,0 +1,5 @@
+Set 1: {A, B, C}
+Set 2: {B, D, E}
+
+Set 1 intersection Set 2: {B}
+Set 1 union Set 2: {A, B, C, D, E}

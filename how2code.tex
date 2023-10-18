@@ -1,11 +1,13 @@
-%Formattting
+%Formatting
 \documentclass[12pt,a4paper]{book}
 \usepackage{setspace} 
 \doublespacing
 \usepackage{float}
 \usepackage[]{geometry}
+\usepackage{xargs} 
 \setlength{\parindent}{0in}
 \restylefloat{table}
+\usepackage{tcolorbox}
 
 %Mathematics
 \usepackage{amsmath}
@@ -14,7 +16,10 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{tocloft}
-\usepackage{xcolor}
+%\usepackage[pdftex,dvipsnames]{xcolor}
+
+%\definecolor{OliveGreen}
+%\definecolor{Plum}
 
 \definecolor{commentsColor}{rgb}{0.497495, 0.497587, 0.497464}
 \definecolor{keywordsColor}{rgb}{0.541176, 0.168627, 0.886275}
@@ -37,8 +42,25 @@
   	stringstyle=\color{stringColor}\ttfamily,
 	keywordstyle=\color{keywordsColor}\bfseries,
 }
+\newcommand{\lstprompt}{>>>}
+\newcommand{\numberwithprompt}[1]{\footnotesize\ttfamily\selectfont \lstprompt}
 
 
+% https://tex.stackexchange.com/questions/340232/how-insert-a-character-at-the-begin-of-every-line-from-a-source-code
+\lstdefinestyle{console} {
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	stepnumber=1,
+	showstringspaces=false,
+	tabsize=1,
+	breaklines=true,
+	breakatwhitespace=false,
+	frame=single,
+	xleftmargin=2em,
+	framexleftmargin=2.5em,
+	backgroundcolor=\color{gray!55},
+	numberstyle=\numberwithprompt,
+	}
 
 % \lstdefinelanguage{psuedocode}{
 %   keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
@@ -56,7 +78,6 @@
 % }
 
 \usepackage{algpseudocodex}
-
 %Book Stuff
 \newenvironment{dedication}
 {%\clearpage           % we want a new page          %% I commented this
@@ -73,10 +94,11 @@
 %Citations
 %\usepackage{cite}
 \usepackage[backend=bibtex,style=verbose-trad2]{biblatex} %works really really well, but no MLA format
-%\usepackage[backend=biber,style=mla]{biblatex} %Doesn't print all sources for some reason
+% %\usepackage[backend=biber,style=mla]{biblatex} %Doesn't print all sources for some reason
 \usepackage{caption}
 \newcommand{\source}[1]{\caption*{Source: {#1}} }
-\bibliography{sources} 
+
+\bibliography{references.bib} 
 
 \newcommand{\listequationsname}{List of Equations}
 
@@ -94,14 +116,30 @@
 	urlcolor=black
 }
 
+% Drafting Stuff (CHANGE FOR FINAL) TODO!
+\usepackage[colorinlistoftodos,prependcaption]{todonotes}
+\usepackage{draftwatermark}
+\usepackage{lipsum}
+
+\SetWatermarkText{\texttt{DRAFT}}
+\SetWatermarkScale{7}
+\SetWatermarkAngle{45}
+
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\toadd}[2][1=]{\todo[linecolor=green,backgroundcolor=green!25,bordercolor=green,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=yellow,backgroundcolor=yellow!25,bordercolor=yellow,#1]{#2}}
+\newcommandx{\improve}[2][1=]{\todo[linecolor=pink,backgroundcolor=pink!25,bordercolor=pink,#1]{#2}}
+\newcommandx{\hiddentodo}[2][1=]{\todo[disable,#1]{#2}}
+
 \begin{document}
-	\title{java.util.helpmepls \\
+	\title{java.util.helpmepls; \\
+	if \_\_name\_\_ == ``\_\_pain\_\_:'' \\
 	\large{\textit{Learning to Code from a Subpar Programmer}}}
 	\author{Aditya K. Rao}
-	\date{\texttt{Last Edited: \today}}
+	\date{\texttt{Work in progress \\ Last Edited: \today}}
 	\maketitle
-	
-	
+
 	\begin{dedication}
 		``For anyone that wants to learn how to code or something''
 		%``Dedicated to Arnav's fat juicy ass''
@@ -109,24 +147,25 @@
 		%\vspace{2\baselineskip}
 		
 		\vspace{\baselineskip}
-		\usefont{T1}{LobsterTwo-LF}{bx}{it}
+		%\usefont{T1}{LobsterTwo-LF}{bx}{it}
 		- Adi
 	\end{dedication}
 	
-	
 	\tableofcontents
-	
+	\listoftodos
+	TODO KEY [\textbf{IGNORE}]\unsure{Review work and see if it needs to change}\change{Make changes to existing work}\toadd{Add something is missing}\info{Expand upon exisitng work}\improve{Rewrite or reword to improve existing work}
+
 	%\begin{abstract}
 	%\end{abstract}
 	%\textit{For all those people who asked me what course I used to learn how to code, I hope this helps make your journey easier}
 	
 	%\newpage
 	\chapter*{Prologue/Introduction}  \label{chap:intro}
-		Hi there, my name is Adi. At the time of writing this book, I recently have graduated from highschool and am on my way to university soon. Over the last four or five years, I've developed a deep interest in the ever elusive world of code. My main language is Python but I've recently diversified into many other avenues like Java, JavaScript, HTML, CSS, C++, Dart, and a few others. However, Python is definitely the language I have the most experience in. As such, that will be the basis for most of the actual code snippets in this book. I will also provide a few examples in psuedocode whenever I do something in a certain language. 
+		Hi there, my name is Adi. At the time of writing this book, I recently have graduated from highschool and am on my way to university soon. Over the last four or five years, I've developed a deep interest in the ever elusive world of code. My main language is Python but I've recently diversified into many other avenues like Java, JavaScript, HTML, CSS, C++, Dart, and a few others. However, Python is definitely the language I have the most experience in. As such, that will be the basis for most of the actual code snippets in this book. I will also provide a few examples in psuedocode whenever I do something in a certain language. \change{Potentially rewrite, sounds litte childish?}
 		\\\\
-		I don't consider myself to be any authority on Computer Science/Engineering or anything like that, I'm just a guy who thinks he's got a decent method to help some people pursue their interests. My objective with this book is not really to help you learn a certain language, rather, it gives you the tools and knowledge to help you learn whatever language you want.
+		I don't consider myself to be any authority on Computer Science/Engineering or anything like that, I'm just a guy who thinks he's got a decent method to help some people pursue their interests. My objective with this book is not really to help you learn a certain language, rather, it gives you the tools and knowledge to help you learn whatever language you want.\unsure{Maybe not the best in the introduction, consider rewriting}
 		\\\\
-		Many people who want to learn how to code already have an objective in mind and simply want the tools to make that dream a reality. Others just are interested in the subject area as a whole, some just want to get ahead of the curb and learn the skills required in a world ever dominated by tech. All of these are valid reasons for someone to learn to code. However, there is a difference between a person who knows how to program, and a programmer. Thea former can give instructions to a computer and knows what to expect as an output. The latter knows how and why a computer is doing what it is doing to make their instructions more and more efficient.
+		Many people who want to learn how to code already have an objective in mind and simply want the tools to make that dream a reality. Others just are interested in the subject area as a whole, some just want to get ahead of the curb and learn the skills required in a world ever dominated by tech. All of these are valid reasons for someone to learn to code. However, there is a difference between a person who knows how to program, and a programmer. Thea former can give instructions to a computer and knows what to expect as an output. The latter knows how and why a computer is doing what it is doing to make their instructions more and more efficient
 		\\\\
 		Therefore, these are the topics that we'll delve into in this instructional guide. First, we'll start with why you should be interested in code. Next, we'll progress into what coding actual is. Then, we'll take a turn and look at the inner workings of a computer and what components like the CPU and RAM actually do and how a computer understands the instructions that you give it. Then we'll learn some of the basics of any major high-level programming language (examples will be given in \textit{Python, Java, and psuedocode}) and techniques to go along with it. Lastly, we'll go into some of the most important skills for a coder, the way you need to think about problems. This is by far the most important - and one of the most overlooked - skills that you develop when programming.
 		\\\\
@@ -139,7 +178,7 @@
 		\section{Education}
 			You may be looking for a new route in your education career. Coding is a skill that can help you in almost any field. Even something like history where you almost definitively will not be writing any code, skills like Decomposition will help you breakdown your tasks and methodically complete them. 
 		\section{Freedom}
-			The last opportunity that coding gives you is freedom. In our technology enhanced world almost everything is in some way shape or form dependent on some sort of tech. If you want to start a business or some sort of initiative, tech skills can help you start your concept, be a better manager by understanding the work being conducted, or by simply allowing you to automate monotonous tasks giving you more time to do what you want.
+			The last opportunity that coding gives you is freedom. In our technology enhanced world almost everything is in some way shape or form dependent on some sort of tech. If you want to start a business or some sort of initiative, tech skills can help you start your concept, be a better manager by understanding the work being conducted, or by simply allowing you to automate monotonous tasks giving you more time to do what you want. \change{This section is written a bit poorly}
 
 	\chapter{What is coding?}  \label{chap:intro-coding}
 		What actually is coding? Many people don't seem to understand what someone who  codes actually does. We've all seen those scenes in movies and TV shows where the protagonist (or antagonist) says a bunch of tech words, sometimes throws a "quantum" or two in there for good measure, and then how is able to stop a software nuke (whatever that is) from annihilating downtown Brooklyn. It's not nearly as glamours. When you code, you're simply giving instructions that a machine can understand and execute.
@@ -202,7 +241,7 @@
 				\\\\
 			I additionally want to add some general information that can be useful in your everyday life. There's a difference between KiB, kB, and kb (and MiB, MB, and Mb and others). The first is a \textbf{Kibibyte} which is 1024 bytes. The second is a Kilobyte which is 1000 bytes. The last is 1024 \textit{\textbf{bits}} \textbf{not} \textit{bytes}. Internet service providers like to use this trick to make their speeds seem faster than they actually are - specifically with kB and kB (or MB and Mb). Computer/Mobile manufactures do something similar with KiB and kB (MiB and MB) to make it seem like their devices have more storage than they do. 
 				\\\\
-				There are more complex things in binary, such as binary addition, subtraction, multiplication, and division. However, I don't think it's really necessary or practical most of the time. If you're interested, I recommend taking a look at this video
+				There are more complex things in binary, such as binary addition, subtraction, multiplication, and division. However, I don't think it's really necessary or practical most of the time. If you're interested, I recommend taking a look at this video \toadd[inline]{Add in video here}
 			
 			\subsection{Alternative Number systems}
 			Alternatively, hexadecimal - base-16 - is commonly used as a representation for binary numbers as it can easily be used to show nibbles with a single character. Hex has 16 digits (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F). This means we can represent any byte with two digits. This is quite convenient whenever we do need to look at the raw binary of some data.
@@ -225,16 +264,16 @@
 					\caption{ \\
 						\textit{Binary Number:} \textbf{1001110} \\ \textit{Hexadecimal Number:} \textbf{9E}}
 				\end{table}
-			One practical use of hexadecimal is when reading through machine code. When you open some files, you'll be greated with a range of hexadecimal numbers. Sometimes, it can be useful to know hexadecimal to debug these files (i.e. knowing the exit byte in a document to understand why your code is failing).
+			One practical use of hexadecimal is when reading through machine code. When you open some files, you'll be greated with a range of hexadecimal numbers. Sometimes, it can be useful to know hexadecimal to debug these files (i.e. knowing the exit byte in a document to understand why your code is failing). \unsure{I don't know if this is very practical, wth was I on}
 			\\\\
-			Another practical use would be simply representing large numbers easily, sometimes it's just easier to read them.
+			Another practical use would be simply representing large numbers easily, sometimes it's just easier to read them. \improve{Talk about RGB color codes (probably the most practical use)}
 			
 			\subsection{ASCII and Unicode}
 				One important implementation of binary is ASCII and Unicode. This is a certain format of binary number used to store characters also known as symbols, letters, and numbers. 
 				\\\\
 				The former, ASCII, stands for the ``American Standard Communication for Information Interchange.'' Essentially, it provides a convenient way for all computers to render documents and information. ASCII characters tend to have the form ``0100 0000'' with different combinations of the first two bits representing different characters (i.e. ``0110 0000'' for capital letters).
 				\\\\
-				ASCII was revolutionay, however, overtime with the widespread global use of computers, there simply weren't enough bits to represent every characters/symbol from every language. Hence, unicode was created %Insert specific information about unicode
+				ASCII was revolutionay, however, overtime with the widespread global use of computers, there simply weren't enough bits to represent every characters/symbol from every language. Hence, unicode was created \info{Specific information about unicode}
 		\section{Von-Nueman Architecture}
 			Von-Nueman Architecture is the fundamental organization of most modern computer systems. It essentially boils the system down into smaller subsystems.
 			\\\\
@@ -252,19 +291,19 @@
 		\section{Getting started}
 			This part is pretty simple but is important. You need to download your language of choice and get an IDE (Integrated Development Environment) or an editor of some sort - the second part isn't required, but is definitely good for quality of life.
 			\\\\
-			My current go-to IDE for python is \textit{Spyder}\footnote{\url{https://www.spyder-ide.org/}}%PUT IN SPYDER LINK 
-			, I also love \textit{VS Code}\footnote{\url{https://code.visualstudio.com/}} for most other languages (and some python as well). If you're just getting started and just want to play around a bit, you can use the basic Python IDE.
+			My current go-to IDE for python is \textit{Spyder}\footnote{\url{https://www.spyder-ide.org/}}, I also love \textit{VS Code}\footnote{\url{https://code.visualstudio.com/}} for most other languages (and some python as well). If you're just getting started and just want to play around a bit, you can use the basic Python IDE.
 		\section{New file}
+			\improve[inline]{java examples}
 			%Provide examples in python and in java
 		\section{Datatypes}
-			\subsection{Primitaves}
+			\subsection{Primitaves} \todo{Primitive Section}
 				% Integers, Floating point, Booleans, Strings
-			\subsection{Basic Non-Primitaves}
+			\subsection{Basic Non-Primitaves} \todo{Non-primitive Section}
 				% Lists, Tuples, Sets, Dictionaries
 		\section{if, then, else}
 			\textit{If} conditions make up the inner workings of conditional logic. The idea behind them is very simple: if a certain property is true then do a certain task. In other words, if the answer to a question is yes, then you get a certain response.
 			\\\\
-			no
+			\change{Find a new package for algorithms and psuedocode}
 			% \begin{algorithm}
 			% 	%Algorithm goes here
 			% \end{algorithm}
@@ -284,22 +323,43 @@
 			\\\\
 			Lists allow us to reference and store data in many different ways and their use cases are countless. In fact, I'd go so far as to say that they're the most used data type/structure outside of simple variables.
 			\\\\
-			In order to create a list in Python, we simpy use square brackets ``[ ]''. See \coderef{code:list-1}
-  `			\begin{codex}
-  				\label{code:list-1}	
-  			\lstinputlisting[language=python]{code_examples/chapter_5/list.py} 
-  			\end{codex}
+			In order to create a list in Python, we simpy use square brackets ``[ ]''.
+  			\lstinputlisting[language=python]{code_examples/chapter_5/list_def.py} 
 		\section{Arrays}
-			Arrays are like lists but are generally of set length and data type.
+			Arrays are like lists but are generally of set length and data type. Python doesn't actually have a set way of doing arrays, instead there are \texttt{tuples} (which we will explore next). This may be a bit confusing as in other languages arrays are typically completely immutable (but again this depends on the language).
+		
 		\section{Tuples}
-			Tuples in Python are like lists, however, they're completely immutable. This means that they \textit{cannot be changed}; once they data they're initialized is in them, they cannot be changed. In order to create a list we simple use parentheses ``()''. T
+			Tuples are Python's version of an array, however, they're completely immutable. This means that they \textit{cannot be changed}; once they data they're initialized is in them, they cannot be changed. In order to create a list we simple use parentheses ``()''. 
 			
-			\lstinputlisting[language=python]{code_examples/chapter_5/tuple.py}
+			\lstinputlisting[language=python]{code_examples/chapter_5/tuple_def.py}
 			
 			There are many reasons as to why we'd use a tuple over an array or list. While they may be less functional (they have fewer built in extra functions), they do take up less memory and are decently faster for large data. This is mainly because they're \textbf{immutable}. Additionally, as we'll see in the next section (\ref{sec:dictionary}), we can use tuples as keys in the dictionary. We cannot do this with lists.
 
+		\section{Sets}
+			Sets are a form of mutable data type which essentially act like a bag for data. The data in a set is not ordered/indexed in any way (unlike a list which has a specified index/order). These sets are a representation of mathematical sets if you are familiar with them. To define a set we use curly brackets (``\{\}'') and just list our data.
+			\lstinputlisting[language=python]{code_examples/chapter_5/set_def.py}
+			
+			Sets have special functions associated with them. For example, $\in$ is \texttt{in}, intersection ($A\cap B$) is \texttt{A.intersection(B)}, and union ($A\cup B$) is \texttt{A.union(B)}. If you are unfamiliar with sets, you may be more familiar with venn diagrams, you can see the representation of these operations in \figref{fig:chap5-sets-1}.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/chapter_5/sets.png}
+				\caption{A Venn diagram of unions and intersections for two sets, $A$ and $B$ and their complements, within a universe $\Omega$ $A$,$B$}
+				%\source{Sets Graphs and Things We Can See A Formal Combinatorical Ontology for Empirical Intra Site Analysis}
+				\label{fig:chap5-sets-1}
+			\end{figure}
+			\textit{Image taken from listed source\autocite{chap_5_set_figure_1}}\change{Autocite not working for footnote in figure, find a workaround} 
+			\\\\
+			It should be noted that the set comliment ($A'$) is \textbf{not well defined} in python as it relied on the existance of a universe $\Omega$. We can see how each of these actions actually work by running the following code.
+
+			\lstinputlisting[style=console]{code_examples/chapter_5/set_example_output.txt}
+
+
 		\section{Dictionary}
-			This is just an implementation of a more complex datastructure called a hashmap. Hashmaps essentially take a \textbf{key} and associate them with a specific \textbf{value}.
+			This is just an implementation of a more complex datastructure called a hashmap. Hashmaps essentially take a \textbf{key} and associate them with a specific \textbf{value}. To define a dictionary, we do almost hte exact same thing as a set, we use curly brackets (``\{\}''). However, the key difference is we have to define a \textbf{key value pair} where we use a colon (``:'') to seperate the key and the value. If this was a bit hard to understand, I would suggest looking at the example below:
+			
+			\lstinputlisting[language=python]{code_examples/chapter_5/dictionary_def.py}
+
+			It is worth noting that you dont \textit{have to} put the keys-value pairs on seperate lines, but is general practice.
 			
 		\section{Advanced Data-structures}
 			\subsection{Linked Lists}
@@ -609,14 +669,17 @@
 			\subsection{Flowcharts} \label{sec:flowchart}
 				
 		\section{Mathematics}
-	
+			As with anthing in almost anything STEM, mathematics plays a huge role in computer science. While at the top level, you don't need to deal with a lot of it, I do still think that some of the basics are worth learning as they can come in handy later on. The primary thing that's worth learning is some introduction to logic. While this can get very complicated, we will only touch upon the basics of it here (with provided resources listed). \\
+			\\
+			First, lets list some symbols. 
+
 	\chapter{Two Camps}  \label{chap:intro-functional-oops}
 		\section{Functional}
-			
+			% Avi has offered to write a ``Guest section'' (whatever the fuck that mean)
 		\section{Object Oriented}
 			
 	\chapter{Functional Programming Crash Course} \label{chap:crash-functional}
-		
+		% Avi has offered to write a ``Guest chapter'' (whatever the fuck that mean)
 	\chapter{Object Oriented Programming Crash Course} \label{chap:oops}
 		\section{Classes, Methods, and Objects}
 			
@@ -642,5 +705,7 @@
 			\subsection{Data Analysis}
 				Sentdex
 	\appendix 
+	\chapter{Bibliography and References} \label{chap:apdx-bib}
+		\printbibliography[heading=none]
 	\chapter{Suplemental Code} \label{chap:apdx-sup-code}
 \end{document}s

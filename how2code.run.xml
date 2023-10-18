@@ -84,7 +84,7 @@
       <file>how2code-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>sources.bib</file>
+      <file>references.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
