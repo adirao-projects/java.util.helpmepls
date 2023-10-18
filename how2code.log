@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  18 OCT 2023 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  18 OCT 2023 19:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1443,15 +1443,15 @@ Package logreq Info: Writing requests to 'how2code.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37000 strings out of 475248
- 696463 string characters out of 5774227
+ 36999 strings out of 475248
+ 696449 string characters out of 5774227
  2022785 words of memory out of 5000000
- 57690 multiletter control sequences out of 15000+600000
+ 57689 multiletter control sequences out of 15000+600000
  573944 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,13n,117p,1926b,2207s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on how2code.pdf (63 pages, 454494 bytes).
+Output written on how2code.pdf (63 pages, 454301 bytes).
 PDF statistics:
  987 PDF objects out of 1000 (max. 8388607)
  269 named destinations out of 1000 (max. 500000)
