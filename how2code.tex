@@ -30,6 +30,8 @@
 { %Formatting for code
 	basicstyle=\footnotesize\ttfamily,
 	numbers=left,
+	%caption={},
+	%title={},
 	stepnumber=1,
 	showstringspaces=false,
 	tabsize=1,
@@ -96,6 +98,7 @@
 \usepackage[backend=bibtex,style=verbose-trad2]{biblatex} %works really really well, but no MLA format
 % %\usepackage[backend=biber,style=mla]{biblatex} %Doesn't print all sources for some reason
 \usepackage{caption}
+\captionsetup[lstlisting]{font={small,tt}}
 \newcommand{\source}[1]{\caption*{Source: {#1}} }
 
 \bibliography{references.bib} 
@@ -116,7 +119,7 @@
 	urlcolor=black
 }
 
-% Drafting Stuff (CHANGE FOR FINAL) TODO!
+% Drafting Stuff (CHANGE FOR FINAL) TODO [!!!]
 \usepackage[colorinlistoftodos,prependcaption]{todonotes}
 \usepackage{draftwatermark}
 \usepackage{lipsum}
@@ -310,6 +313,41 @@
 			%\lstinputlisting[language=python]{C:/Users/Aditya Rao/Desktop/Misc/The Definitive Guide to Beginning to Code/code_examples/chapter_4/if_then_else.py}
 			%\lstinputlisting[language=java]{C:/Users/Aditya Rao/Desktop/Misc/The Definitive Guide to Beginning to Code/code_examples/chapter_4/if_then_else.py}
 		\section{for and while}
+				For and while loops will become your best friends over time. What they essentially do is allow you to run a certain amount of code over and over again. For example, say I had some code for my daily routine, and I wanted to run it every day for a year, I could use a \texttt{for-loop} to run my daily routine code 365 times (one for each day in the year). 
+				\\\\
+				Similarly, say I wanted to run this daily routine code forever \textbf{while} I'm alive. I could use a while loop which runs until a certain condition is met (until I'm dead). This is a subtle difference, but an important one. We will go over when to use each loop later in this section.
+
+				\subsection{while loops}
+					To write a while loop, we do the following:
+					\lstinputlisting[language=python, label={lst-py:while-def} caption={Defining a while loop}, title={Defining a While Loop}]{code_examples/chapter_4/while_def.py}
+					Notice that we use a boolean statement right after the while and then a ``:''. a Boolean statement is any statement which evaluates to \texttt{True} or \texttt{False}. When the statment is true, the while loop will run, when the statement is false, it will not. In this case, as long as our counter variable is \textbf{strictly} less than the number in the boolean statement the while loop will run. If they're equal it will not (since it is $<$ and not $\leq$).
+					\\\\
+					In Ex.\ref{lst-py:while-def} the following will be outputed (this method of writing outputs is called a ``trace table'').
+					\begin{table}[H]
+						\centering
+						\begin{tabular}{c|c|c}
+							\texttt{count} & \texttt{while count $< \ 5$} & OUTPUT \\
+							\hline
+							0 & \texttt{True} & ``Hello World'' \\
+							1 & \texttt{True} & ``Hello World'' \\
+							2 & \texttt{True} & ``Hello World'' \\
+							3 & \texttt{True} & ``Hello World'' \\
+							4 & \texttt{True} & ``Hello World'' \\
+							5 & \texttt{False} & ``''
+						\end{tabular}
+						\caption{Truth table for code example}
+						\label{tab:while-def-tt}
+					\end{table}
+
+				\subsection{for loops}
+
+
+				\subsection{do-while loops}
+
+
+				\subsection{the difference}
+
+
 		\section{functions}
 		
 	\chapter{Data-structures}  \label{chap:datastructures}
@@ -354,7 +392,7 @@
 			\lstinputlisting[style=console]{code_examples/chapter_5/set_example_output.txt}
 
 
-		\section{Dictionary}
+		\section{Dictionary} \label{sec:dictionary}
 			This is just an implementation of a more complex datastructure called a hashmap. Hashmaps essentially take a \textbf{key} and associate them with a specific \textbf{value}. To define a dictionary, we do almost hte exact same thing as a set, we use curly brackets (``\{\}''). However, the key difference is we have to define a \textbf{key value pair} where we use a colon (``:'') to seperate the key and the value. If this was a bit hard to understand, I would suggest looking at the example below:
 			
 			\lstinputlisting[language=python]{code_examples/chapter_5/dictionary_def.py}
