@@ -94,10 +94,10 @@
 \contentsline {section}{\numberline {13.1}Where do I go from here?}{69}{section.13.1}%
 \contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{69}{section.13.2}%
 \contentsline {subsection}{\numberline {13.2.1}Algorithms and Mathematics}{69}{subsection.13.2.1}%
-\contentsline {subsubsection}{Formal Logic}{69}{section*.39}%
-\contentsline {subsubsection}{Linear Algebra}{69}{section*.40}%
-\contentsline {paragraph}{Linear Algebra Done Right (S. Axler):}{69}{section*.41}%
-\contentsline {paragraph}{Linear Algebra (J. Hefferon):}{70}{section*.42}%
+\contentsline {subsubsection}{Formal Logic}{69}{section*.40}%
+\contentsline {subsubsection}{Linear Algebra}{69}{section*.41}%
+\contentsline {paragraph}{Linear Algebra Done Right (S. Axler):}{69}{section*.42}%
+\contentsline {paragraph}{Linear Algebra (J. Hefferon):}{70}{section*.43}%
 \contentsline {subsection}{\numberline {13.2.2}Networking}{70}{subsection.13.2.2}%
 \contentsline {subsection}{\numberline {13.2.3}Data Analysis}{70}{subsection.13.2.3}%
 \contentsline {chapter}{\numberline {A}Bibliography and References}{71}{appendix.A}%

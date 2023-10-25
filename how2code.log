@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  24 OCT 2023 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  24 OCT 2023 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1391,7 +1391,7 @@ File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 445.
  (code_examples/chapter_5/set_def.py [36])
-<figures/chapter_5/sets.png, id=783, 853.1875pt x 720.6925pt>
+<figures/chapter_5/sets.png, id=786, 853.1875pt x 720.6925pt>
 File: figures/chapter_5/sets.png Graphic file (type png)
 <use figures/chapter_5/sets.png>
 Package pdftex.def Info: figures/chapter_5/sets.png  used on input line 451.
@@ -1478,12 +1478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 767--772
  []
 
 [60]
-Underfull \hbox (badness 10000) in paragraph at lines 778--781
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 793--865
+Underfull \hbox (badness 10000) in paragraph at lines 791--863
 
  []
 
@@ -1504,7 +1499,7 @@ Chapter 12.
 ]
 Chapter 13.
 
-Overfull \hbox (14.53003pt too wide) in paragraph at lines 890--890
+Overfull \hbox (14.53003pt too wide) in paragraph at lines 891--891
 []\OT1/cmr/bx/n/17.28 Topic/resources to look into (by sub-ject area) 
  []
 
@@ -1539,17 +1534,17 @@ Package logreq Info: Writing requests to 'how2code.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54366 strings out of 475248
- 1215704 string characters out of 5774227
- 2349110 words of memory out of 5000000
- 74883 multiletter control sequences out of 15000+600000
+ 54379 strings out of 475248
+ 1215979 string characters out of 5774227
+ 2349309 words of memory out of 5000000
+ 74895 multiletter control sequences out of 15000+600000
  574748 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,14n,117p,1926b,2207s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on how2code.pdf (73 pages, 501469 bytes).
+Output written on how2code.pdf (73 pages, 503153 bytes).
 PDF statistics:
- 1191 PDF objects out of 1200 (max. 8388607)
- 367 named destinations out of 1000 (max. 500000)
+ 1195 PDF objects out of 1200 (max. 8388607)
+ 368 named destinations out of 1000 (max. 500000)
  754 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -197,7 +197,7 @@
 
 	\chapter{How does a computer work?}  \label{chap:computers}
 		Knowing how a computer works is what separates the good from the great. When you understand how a computer works you, it's easier to make code more efficient and understand how your code works on the lower-levels (machine and assembly language).
-		\section{Ones and Zeros}
+		\section{Ones and Zeros} \label{sec:computers-binary}
 			When you write code, you're essentially writing a bunch of words which get turned into 0s and 1s. These 0s and 1s subsequently are used to tell the computer whether to turn a switch on or off (also known as high or low as if the switch is \textit{on} then a \textit{higher} current is sent across the wire and vice versa). This number system is known as \textit{binary} or \textit{base-2}. On the other hand, our number system is called \textit{decimal} or \textit{base-10} because we have 10 digits (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9).
 			\subsection{Binary}
 				Binary only has two digits - hence base-2 - which are 0 and 1. Each place value is a multiple of 2 with the first being $2^{0}=1$, then $2^{1}=2$, $2^{2}=4$, $2^{3}=8$ and so on as can be seen in Table \ref{tab:binary1}.
@@ -581,7 +581,7 @@
 			\end{align*}
 			Hence, we have used decomposition for a simple example. Say now we move on to a more complicated case. \\
 			\\
-			Say we need to code an alarm clock. There are a lot of functionality we need to think about. A good exercise is to give this a shot yourself before reading further. 
+			Say we need to code an alarm clock. There are a lot of functionality we need to think about. A good exercise is to give this a shot yourself before reading further. \toadd{add checkpoints along the way \textit{through} each example to link the importnat idea (decomponsing/operationalizing ideas)}
 
 			\subsection{Alarm Clock Example}
 				Say we have an alarm clock. At a high level, an alarm clock must perform the following functions:
@@ -775,9 +775,7 @@
 			\subsection{Flowcharts} \label{sec:flowchart}
 				
 		\section{Mathematics}
-			As with anthing in almost anything STEM, mathematics plays a huge role in computer science. While at the top level, you don't need to deal with a lot of it, I do still think that some of the basics are worth learning as they can come in handy later on. The primary thing that's worth learning is some introduction to logic. While this can get very complicated, we will only touch upon the basics of it here (with provided resources listed). \\
-			\\
-			First, lets define some symbols. 
+			As with anthing in almost anything STEM, mathematics plays a huge role in computer science. While at the top level, you don't need to deal with a lot of it, I do still think that some of the basics are worth learning as they can come in handy later on. The primary thing that's worth learning is some introduction to logic. While this can get very complicated, we will only touch upon the basics of it here (with provided resources listed). First, lets define some symbols. 
 			
 			\begin{table}[H]
 				\centering
@@ -862,6 +860,9 @@
 					\end{tikzpicture}
 				\end{minipage}
 			\end{figure}
+
+			Understanding these statements is part of the fundementals of how computers work. As discussed in \ref{sec:computers-binary} everything in a computer is a 1 or 0. Like we did above, this is just a true or a false. Logic gives us the tools to abstractify binary operations and come up with a much more sophisticated approach to problems.
+
 	\chapter{Two Camps}  \label{chap:intro-functional-oops}
 		\section{Functional}
 			% Avi has offered to write a ``Guest section'' (whatever the fuck that mean)
