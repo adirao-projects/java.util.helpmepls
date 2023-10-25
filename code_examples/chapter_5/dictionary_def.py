@@ -1,5 +1,11 @@
 # Creating a set in Python
 
+# The following is an empty dictionary
+dict_def = dict() 
+
+# or this does the same thing
+dict_def = {}
+
 # The following is a dictionary of integers keys and character values
 dict_1 = {1: 'A', 
           2: 'B',

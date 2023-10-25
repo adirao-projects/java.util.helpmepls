@@ -16,6 +16,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{tocloft}
+\usepackage{circuitikz}
 %\usepackage[pdftex,dvipsnames]{xcolor}
 
 %\definecolor{OliveGreen}
@@ -294,15 +295,39 @@
 		\section{Getting started}
 			This part is pretty simple but is important. You need to download your language of choice and get an IDE (Integrated Development Environment) or an editor of some sort - the second part isn't required, but is definitely good for quality of life.
 			\\\\
-			My current go-to IDE for python is \textit{Spyder}\footnote{\url{https://www.spyder-ide.org/}}, I also love \textit{VS Code}\footnote{\url{https://code.visualstudio.com/}} for most other languages (and some python as well). If you're just getting started and just want to play around a bit, you can use the basic Python IDE.
+			My current go-to IDE for python is \textit{Spyder}\footnote{\url{https://www.spyder-ide.org/}}, I also love \textit{VS Code}\footnote{\url{https://code.visualstudio.com/}} for most other languages (and some python as well). If you're just getting started and just want to play around a bit, you can use the basic Python IDE.\info{Talk in short about IDEs and different development enviornments}
 		\section{New file}
-			\improve[inline]{java examples}
+			\toadd[inline]{java examples}
 			%Provide examples in python and in java
 		\section{Datatypes}
 			\subsection{Primitaves} \todo{Primitive Section}
 				% Integers, Floating point, Booleans, Strings
 			\subsection{Basic Non-Primitaves} \todo{Non-primitive Section}
 				% Lists, Tuples, Sets, Dictionaries
+
+		\section{Basic in-built functions} 
+		\unsure{Might be too python specific, maybe make generic or make 2 editions for java built ins and python built ins}
+			\subsection{print()}
+
+			\subsection{input()}
+
+			\subsection{len()}
+
+			\subsection{type()}
+
+			\subsection{Math}
+				\subsubsection{min()}
+
+				\subsubsection{max()}
+
+				\subsubsection{abs()}
+
+				\subsubsection{round()}
+
+				\subsubsection{pow()}
+
+				\subsubsection{complex()}
+
 		\section{if, then, else}
 			\textit{If} conditions make up the inner workings of conditional logic. The idea behind them is very simple: if a certain property is true then do a certain task. In other words, if the answer to a question is yes, then you get a certain response.
 			\\\\
@@ -340,7 +365,50 @@
 					\end{table}
 
 				\subsection{for loops}
+					For loop are just like while loops except they only execute a definite number of times. That is to say that we cannot have an \textit{infinite} for loop. This is the opposite of a while loop which can be written to run an infinite number of times until a certain condition is met. 
+					\\\\
+					As you write more and more code, you'll notice that for loops are used a decent amount more than while loops. One simple reason when starting out is that there'll be less of a change you'll accidentally write an infinite for loop than a while loop (which may crash your computer)\change{really poorly written}. 
+					\\\\
+					To write a for loop, simply, do the following:
+					\lstinputlisting[language=python, label={lst-py:for-def} caption={Defining a for loop}, title={Defining a For Loop}]{code_examples/chapter_4/for_def.py}
 
+					Notice in this code example, there are a few new things. Firstly the \textbf{\texttt{range(a, b, c)}} function (where $a, b, c$ are integer/whole numbers) makes a \textbf{range object} with values starting from \texttt{a}, increasing by \texttt{c} for all values less than (\textbf{not} including) \texttt{b}. This can be turned into a \textbf{list} for us to better understand by doing \textbf{\texttt{list(range(a, b, c))}}
+					%There are some examples in \coderef{code-py:range}
+					\begin{lstlisting}[language=python, title={range function}, caption={How the Range function works} label={code-py:range}]
+						# You don't need to put in all a, b, c
+
+						# by default, range will always start at 0
+						list(range(5)) = [0, 1, 2, 3, 4]
+
+						# You can set the lower bound (inclusive) of the range
+						list(range(1, 10)) = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+						# You can also set how much to increment by
+						list(range(0, 10, 2)) = [0, 2, 4, 6, 8]
+
+						# This incrementing can by negative to go in decending order
+						list(range(5, 0, -1)) = [5, 4, 3, 2, 1]
+						list(range(15, 5, -3)) = [15, 12, 9, 6]
+					\end{lstlisting}
+					
+					Then, in the loop, we instantiate (fancy word for create/initialize) an incrementing variable (changing variable/quantity) \texttt{i} which takes on each value in this list \textbf{in order} going to the next value at the end of the loop.
+					\\\\
+					This is a lot of information to take in, I reccomend reading this paragraph over a few times to fully absorb it. While reading, look back at the code example and track and identify each statement in code. We can illustrate the output of our code example again using a truth table.
+
+					\begin{table}[H]
+						\centering
+						\begin{tabular}{c|c|c}
+							\texttt{i} & OUTPUT \\
+							\hline
+							0 &  ``Hello World'' \\
+							1 &  ``Hello World'' \\
+							2 &  ``Hello World'' \\
+							3 &  ``Hello World'' \\
+							4 &  ``Hello World'' \\
+						\end{tabular}
+						\caption{Truth table for code example}
+						\label{tab:while-def-tt}
+					\end{table}
 
 				\subsection{do-while loops}
 
@@ -376,7 +444,7 @@
 		\section{Sets}
 			Sets are a form of mutable data type which essentially act like a bag for data. The data in a set is not ordered/indexed in any way (unlike a list which has a specified index/order). These sets are a representation of mathematical sets if you are familiar with them. To define a set we use curly brackets (``\{\}'') and just list our data.
 			\lstinputlisting[language=python]{code_examples/chapter_5/set_def.py}
-			
+
 			Sets have special functions associated with them. For example, $\in$ is \texttt{in}, intersection ($A\cap B$) is \texttt{A.intersection(B)}, and union ($A\cup B$) is \texttt{A.union(B)}. If you are unfamiliar with sets, you may be more familiar with venn diagrams, you can see the representation of these operations in \figref{fig:chap5-sets-1}.
 			\begin{figure}[H]
 				\centering
@@ -709,17 +777,104 @@
 		\section{Mathematics}
 			As with anthing in almost anything STEM, mathematics plays a huge role in computer science. While at the top level, you don't need to deal with a lot of it, I do still think that some of the basics are worth learning as they can come in handy later on. The primary thing that's worth learning is some introduction to logic. While this can get very complicated, we will only touch upon the basics of it here (with provided resources listed). \\
 			\\
-			First, lets list some symbols. 
+			First, lets define some symbols. 
+			
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c|c}
+					Logic Symbol & Name & Description \\
+					\hline
+					$\lnot$ & \texttt{NOT} & The ``negation'' of a boolean statement \\
+					$\land$ & \texttt{AND} & The conjunction of two boolean functions/statements \\
+					$\lor$ & \texttt{OR} & The disjunction of two boolean functions/statements
+				\end{tabular}
+			\end{table}
 
+			Note that we've introdued some fancy terminology in the table above. The negation of a statement is the opposite of what it says. If something is true, its negation will be false (and vice versa). \\
+			\begin{figure}
+				\centering
+				\begin{minipage}{0.7\linewidth}
+					\begin{table}[H]
+						\centering
+						\begin{tabular}{c|c|c}
+							x & $\lnot x$ \\
+							\hline
+							1 & 0 \\
+							0 & 1
+						\end{tabular}
+					\end{table}
+				\end{minipage}
+				\begin{minipage}{0.29\linewidth}
+					\centering
+					\begin{tikzpicture}
+						\ctikzset{logic ports = ieee}
+						\node[not port] (Noa) at (0,0){};
+					\end{tikzpicture}
+				\end{minipage}
+			\end{figure}
+			Note that in the truth table above, we've used $1=\texttt{TRUE}$ and $0 = \texttt{FALSE}$ as is sometimes is used. We can also write this as a \textit{logic gate} which is a more computer science approach and is a more visual approach to how truth tables and logic works. \\
+			\\
+			The conjunction of a statement is true if (and only if) each statement is true.
+			\begin{figure}
+				\centering
+				\begin{minipage}{0.7\linewidth}
+					\begin{table}[H]
+						\centering
+						\begin{tabular}{c|c|c}
+							x & y & $x\land y$ \\
+							\hline
+							0 & 0 & 0 \\
+							0 & 1 & 0 \\
+							1 & 0 & 0 \\
+							1 & 1 & 1
+						\end{tabular}
+					\end{table}
+				\end{minipage}
+				\begin{minipage}{0.29\linewidth}
+					\centering
+					\begin{tikzpicture}
+						\ctikzset{logic ports = ieee}
+						\node[and port] (ANDa) at (0,0){};
+					\end{tikzpicture}
+				\end{minipage}
+			\end{figure}
+			The disjunction of a statement is true if (and only if) any of its statements are true.
+			\begin{figure}
+				\centering
+				\begin{minipage}{0.7\linewidth}
+					\begin{table}[H]
+						\centering
+						\begin{tabular}{c|c|c}
+							x & y & $x\lor y$ \\
+							\hline
+							0 & 0 & 0 \\
+							0 & 1 & 1 \\
+							1 & 0 & 1 \\
+							1 & 1 & 1
+						\end{tabular}
+					\end{table}
+				\end{minipage}
+				\begin{minipage}{0.29\linewidth}
+					\centering
+					\begin{tikzpicture}
+						\ctikzset{logic ports = ieee}
+						\node[or port] (ORa) at (0,0){};
+					\end{tikzpicture}
+				\end{minipage}
+			\end{figure}
 	\chapter{Two Camps}  \label{chap:intro-functional-oops}
 		\section{Functional}
 			% Avi has offered to write a ``Guest section'' (whatever the fuck that mean)
+			\toadd[inline]{Avi's Guest Section}
 		\section{Object Oriented}
 			
 	\chapter{Functional Programming Crash Course} \label{chap:crash-functional}
 		% Avi has offered to write a ``Guest chapter'' (whatever the fuck that mean)
+		\toadd[inline]{Avi's Guest Chapter}
+		\unsure[inline]{FUNC: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}
 	\chapter{Object Oriented Programming Crash Course} \label{chap:oops}
-		\section{Classes, Methods, and Objects}
+		\unsure[inline]{OOPS: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}
+	\section{Classes, Methods, and Objects}
 			
 		\section{Inheritance}
 			
@@ -731,12 +886,17 @@
 		
 	\chapter{Hello World!} \label{chap:hello-world}
 		\section{Where do I go from here?}
+			Aftering going through this book you should be well equiped to tackle any basic to intermediate programming problems that come your way. That being said, a lot of learning how to code relies on practice and familiarity. 
 		\section{Topic/resources to look into (by subject area)}
-			\subsection{Algorithms and Math}
+			\subsection{Algorithms and Mathematics}
 				\subsubsection{Formal Logic}
 				
 				\subsubsection{Linear Algebra}
-					Linear Algebra Done Right (Sheldon Axler)
+					\paragraph{Linear Algebra Done Right (S. Axler):} 
+						Linear Algebra Done Right by Sheldon Axler is a great book for developing a good foundation in linear algebra. I believe this is the one area of mathematics which is crucial to a good understanding of compuer science. The primary shortcoming of this text is Axler does not go very indepth into determinents (by design), however, I believe this leads to a more solid understanding of the important aspects. You can find Axler's website\footnote{\href{https://linear.axler.net/}{https://linear.axler.net/}} which contains links to buy a copy of the textbook.
+
+					\paragraph{Linear Algebra (J. Hefferon):} 
+						I have not personally used this book but I've seen it reccomend quite a bit. The main draw is that this textbook (and question set) are completely free to use. Dr. Hefferon also has a few other books availible for free on his website (which I would highly reccomend checking out).
 					
 			\subsection{Networking}
 				

@@ -1,5 +1,11 @@
 # Creating a tuple in Python
 
+# The following is an empty tuple
+tup_def = ()
+
+# or this does the same thing (but this isn't the preferred way)
+tup_def = tuple() 
+
 # The following is a list of integers
 tup_1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) 
 
