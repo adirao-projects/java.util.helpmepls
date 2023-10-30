@@ -1,0 +1,65 @@
+<head>
+    <!--Change these-->
+    <title>Adi Rao - Governing Council</title>
+
+    <!--Add route to the favicon (image that is in the browser bar) here can be a .png .svg .jpg .ico among other ones (I'm not 100% about the ico though)-->
+    <link rel='icon' type='image/x-icon' href='resources/favicon.png'>
+
+    <script>
+        // https://fireship.io/snippets/light-dark-mode-theme-css/
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Dont't change these -->
+    <meta charset='utf-8'>
+    <link defer rel='stylesheet' type='text/css' href='style_v1.7.css'>
+
+</head>
+
+<script>
+    function toggleTheme() {
+        let className = document.body.className;
+
+        if (className == 'dark') {
+            document.body.className = 'light';
+            document.cookie = "theme=light";
+            document.getElementById('theme-button').value = 'light';
+            document.getElementById('theme-tip').textContent = 'Switch to Dark Theme';
+
+        } else if (className == 'light') {
+            document.body.className = 'dark';
+            document.cookie = "theme=dark";
+            document.getElementById('theme-button').value = 'dark';
+            document.getElementById('theme-tip').textContent = 'Switch to Light Theme';
+
+        }
+    }
+</script>
+
+<body class='light'>
+    <!--<div id='theme'>
+        <button id='theme-button' class='tooltip' onclick='toggleTheme()'></button>
+        <span id='theme-tip' class='tooltip' style='width:170px;'>Change to Dark Mode</span>
+    </div>-->
+    <div id="content-policy">
+        <h1 class="header">
+            Exam Schedule on Enrollment
+        </h1>
+        <div style="font-size: 1.65rem; line-height: 200%;">
+            My platform is simple: Exam Schedule on Enrollment. I want you to know when your exams are as you choose your courses. I want you to know when you're going home from the moment the semester starts. I want you to be as informed as possible. Releasing your
+            exam schedule early is entirely within the University's capabilities. The status quo is antiquated and archaic leading international and domestic students alike to waste hundreds of thousands of dollars a year in increased transportation costs.
+            Other candidates give you vague platitudes; I have one goal and I intend to complete it. I want you to vote now for Adi Rao.
+
+        </div>
+        <br>
+        <div style="padding:3rem;">
+            <div id='highlighted-projects' class='project-list'>
+                <a href='index.html' class='project-link'>
+                    <div class='project-highlighted'>
+                        <label>HOME</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
