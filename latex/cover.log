@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  25 OCT 2023 18:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.10)  2 NOV 2023 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Admin/Desktop/Projects/java.util.helpmepls/cover.tex
-(c:/Users/Admin/Desktop/Projects/java.util.helpmepls/cover.tex
+**c:/Users/Admin/Desktop/Projects/java.util.helpmepls/latex/cover.tex
+(c:/Users/Admin/Desktop/Projects/java.util.helpmepls/latex/cover.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
 (C:\MiKTex\tex/latex/base\book.cls
@@ -84,32 +84,45 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 19.
-<website/resources/favicon_2.png, id=1, 401.5pt x 401.5pt>
-File: website/resources/favicon_2.png Graphic file (type png)
-<use website/resources/favicon_2.png>
-Package pdftex.def Info: website/resources/favicon_2.png  used on input line 33.
-(pdftex.def)             Requested size: 108.405pt x 108.40643pt.
- [1
 
 
-{C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./website/resources/favicon_2.png>] (cover.aux)
+LaTeX Warning: File `website/resources/favicon_2.png' not found on input line 33.
+
+
+c:/Users/Admin/Desktop/Projects/java.util.helpmepls/latex/cover.tex:33: Package pdftex.def Error: File `website/resources/favicon_2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...th=1.5in]{website/resources/favicon_2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 33.
+[1
+
+
+{C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (cover.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1314 strings out of 475248
- 21002 string characters out of 5774227
+ 1340 strings out of 475248
+ 22047 string characters out of 5774227
  1919785 words of memory out of 5000000
- 22879 multiletter control sequences out of 15000+600000
- 560391 words of font info for 44 fonts, out of 8000000 for 9000
+ 22904 multiletter control sequences out of 15000+600000
+ 560559 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,65p,250b,241s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on cover.pdf (1 page, 63862 bytes).
+ 57i,5n,65p,256b,307s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/MiKTex/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on cover.pdf (1 page, 58255 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

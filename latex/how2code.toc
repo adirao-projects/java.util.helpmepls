@@ -18,17 +18,21 @@
 \contentsline {subsection}{\numberline {4.3.1}Primitaves}{26}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Basic Non-Primitaves}{26}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Basic in-built functions}{26}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}print()}{27}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}input()}{27}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.1}print()}{26}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}input()}{26}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}len()}{27}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}type()}{27}{subsection.4.4.4}%
 \contentsline {subsection}{\numberline {4.4.5}Math}{27}{subsection.4.4.5}%
-\contentsline {subsubsection}{min()}{27}{section*.20}%
-\contentsline {subsubsection}{max()}{27}{section*.21}%
-\contentsline {subsubsection}{abs()}{27}{section*.22}%
-\contentsline {subsubsection}{round()}{27}{section*.23}%
-\contentsline {subsubsection}{pow()}{27}{section*.24}%
-\contentsline {subsubsection}{complex()}{27}{section*.25}%
+\contentsline {subsection}{\numberline {4.4.6}$a+b$}{27}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}$a-b$}{27}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}$a*b$}{27}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.9}$a/b$}{27}{subsection.4.4.9}%
+\contentsline {subsubsection}{min()}{27}{section*.22}%
+\contentsline {subsubsection}{max()}{27}{section*.23}%
+\contentsline {subsubsection}{abs()}{27}{section*.24}%
+\contentsline {subsubsection}{round()}{27}{section*.25}%
+\contentsline {subsubsection}{pow()}{27}{section*.26}%
+\contentsline {subsubsection}{complex()}{27}{section*.27}%
 \contentsline {section}{\numberline {4.5}if, then, else}{27}{section.4.5}%
 \contentsline {section}{\numberline {4.6}for and while}{28}{section.4.6}%
 \contentsline {subsection}{\numberline {4.6.1}while loops}{28}{subsection.4.6.1}%
@@ -48,8 +52,8 @@
 \contentsline {subsection}{\numberline {5.7.2}Stacks}{41}{subsection.5.7.2}%
 \contentsline {subsection}{\numberline {5.7.3}Queues}{41}{subsection.5.7.3}%
 \contentsline {subsection}{\numberline {5.7.4}Trees}{41}{subsection.5.7.4}%
-\contentsline {subsubsection}{Binary Trees}{41}{section*.30}%
-\contentsline {subsubsection}{Binary Search Trees}{41}{section*.31}%
+\contentsline {subsubsection}{Binary Trees}{41}{section*.32}%
+\contentsline {subsubsection}{Binary Search Trees}{41}{section*.33}%
 \contentsline {subsection}{\numberline {5.7.5}Heap}{41}{subsection.5.7.5}%
 \contentsline {subsection}{\numberline {5.7.6}Hashmaps}{41}{subsection.5.7.6}%
 \contentsline {subsection}{\numberline {5.7.7}Matrix}{41}{subsection.5.7.7}%
@@ -94,10 +98,10 @@
 \contentsline {section}{\numberline {13.1}Where do I go from here?}{69}{section.13.1}%
 \contentsline {section}{\numberline {13.2}Topic/resources to look into (by subject area)}{69}{section.13.2}%
 \contentsline {subsection}{\numberline {13.2.1}Algorithms and Mathematics}{69}{subsection.13.2.1}%
-\contentsline {subsubsection}{Formal Logic}{69}{section*.40}%
-\contentsline {subsubsection}{Linear Algebra}{69}{section*.41}%
-\contentsline {paragraph}{Linear Algebra Done Right (S. Axler):}{69}{section*.42}%
-\contentsline {paragraph}{Linear Algebra (J. Hefferon):}{70}{section*.43}%
+\contentsline {subsubsection}{Formal Logic}{69}{section*.42}%
+\contentsline {subsubsection}{Linear Algebra}{69}{section*.43}%
+\contentsline {paragraph}{Linear Algebra Done Right (S. Axler):}{69}{section*.44}%
+\contentsline {paragraph}{Linear Algebra (J. Hefferon):}{70}{section*.45}%
 \contentsline {subsection}{\numberline {13.2.2}Networking}{70}{subsection.13.2.2}%
 \contentsline {subsection}{\numberline {13.2.3}Data Analysis}{70}{subsection.13.2.3}%
 \contentsline {chapter}{\numberline {A}Bibliography and References}{71}{appendix.A}%

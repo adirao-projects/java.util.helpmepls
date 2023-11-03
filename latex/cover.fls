@@ -1,6 +1,6 @@
-PWD c:\Users\Admin\Desktop\Projects\java.util.helpmepls
+PWD c:\Users\Admin\Desktop\Projects\java.util.helpmepls\latex
 INPUT C:\Users\Admin\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Admin\Desktop\Projects\java.util.helpmepls\cover.tex
+INPUT c:\Users\Admin\Desktop\Projects\java.util.helpmepls\latex\cover.tex
 OUTPUT cover.log
 INPUT C:\MiKTex\tex\latex\base\book.cls
 INPUT C:\MiKTex\tex\latex\base\book.cls
@@ -42,15 +42,9 @@ INPUT C:\MiKTex\fonts\tfm\public\cm\cmtt12.tfm
 INPUT C:\MiKTex\fonts\tfm\public\cm\cmbx9.tfm
 INPUT C:\MiKTex\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\MiKTex\fonts\tfm\public\cm\cmbx8.tfm
-INPUT .\website\resources\favicon_2.png
-INPUT .\website\resources\favicon_2.png
-INPUT .\website\resources\favicon_2.png
-INPUT .\website\resources\favicon_2.png
-OUTPUT cover.pdf
-INPUT .\website\resources\favicon_2.png
-INPUT .\website\resources\favicon_2.png
-INPUT .\website\resources\favicon_2.png
+INPUT C:\MiKTex\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\MiKTex\fonts\tfm\public\cm\cmbx12.tfm
+OUTPUT cover.pdf
 INPUT C:\Users\Admin\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT cover.aux
 INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
@@ -63,3 +57,5 @@ INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmtt8.pfb
+INPUT C:\MiKTex\fonts\type1\public\amsfonts\cm\cmtt8.pfb
