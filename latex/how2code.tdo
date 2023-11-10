@@ -1,27 +1,64 @@
 \contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add the following}{7}{section*.1}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Review work and see if it needs to change}{10}{section*.3}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Make changes to existing work}{10}{section*.4}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add something is missing}{10}{section*.5}%
-\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Expand upon exisitng work}{10}{section*.6}%
-\contentsline {todo}{\fcolorbox {pink}{pink!25}{\textcolor {pink!25}{o}}\ Rewrite or reword to improve existing work}{10}{section*.7}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Potentially rewrite, sounds litte childish?}{11}{section*.9}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Maybe not the best in the introduction, consider rewriting}{11}{section*.10}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ This section is written a bit poorly}{14}{section*.11}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add in video here}{20}{section*.12}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ I don't know if this is very practical, wth was I on}{21}{section*.13}%
-\contentsline {todo}{\fcolorbox {pink}{pink!25}{\textcolor {pink!25}{o}}\ Talk about RGB color codes (probably the most practical use)}{21}{section*.14}%
-\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Specific information about unicode}{22}{section*.15}%
-\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Talk in short about IDEs and different development enviornments}{25}{section*.16}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ java examples}{25}{section*.17}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Primitive Section}{26}{section*.18}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Non-primitive Section}{26}{section*.19}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Might be too python specific, maybe make generic or make 2 editions for java built ins and python built ins}{26}{section*.20}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add a video on the python console}{26}{section*.21}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Find a new package for algorithms and psuedocode}{27}{section*.28}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ really poorly written}{30}{section*.29}%
-\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Autocite not working for footnote in figure, find a workaround}{38}{section*.31}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ add checkpoints along the way \textit {through} each example to link the importnat idea (decomponsing/operationalizing ideas)}{53}{section*.34}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Avi's Guest Section}{63}{section*.38}%
-\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Avi's Guest Chapter}{65}{section*.39}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ FUNC: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}{65}{section*.40}%
-\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ OOPS: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}{67}{section*.41}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Review work and see if it needs to change}{12}{section*.3}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Make changes to existing work}{12}{section*.4}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add something is missing}{12}{section*.5}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Expand upon exisitng work}{12}{section*.6}%
+\contentsline {todo}{\fcolorbox {pink}{pink!25}{\textcolor {pink!25}{o}}\ Rewrite or reword to improve existing work}{12}{section*.7}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Potentially rewrite, sounds litte childish?}{13}{section*.9}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Maybe not the best in the introduction, consider rewriting}{13}{section*.10}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ This section is written a bit poorly}{16}{section*.11}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add in video here}{22}{section*.12}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ I don't know if this is very practical, wth was I on}{23}{section*.13}%
+\contentsline {todo}{\fcolorbox {pink}{pink!25}{\textcolor {pink!25}{o}}\ Talk about RGB color codes (probably the most practical use)}{23}{section*.14}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Specific information about unicode}{24}{section*.15}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Talk in short about IDEs and different development enviornments}{27}{section*.16}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ java examples}{27}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Primitive Section}{28}{section*.18}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Non-primitive Section}{28}{section*.19}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ Might be too python specific, maybe make generic or make 2 editions for java built ins and python built ins}{28}{section*.20}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Add a video on the python console}{28}{section*.21}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{28}{section*.22}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{29}{section*.23}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{29}{section*.24}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{30}{section*.25}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{30}{section*.26}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{30}{section*.27}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{31}{section*.29}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{31}{section*.31}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{32}{section*.33}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{32}{section*.35}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{33}{section*.37}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{33}{section*.39}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{33}{section*.40}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Find a new package for algorithms and psuedocode}{33}{section*.41}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ really poorly written}{36}{section*.42}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{38}{section*.43}%
+\contentsline {todo}{\fcolorbox {yellow}{yellow!25}{\textcolor {yellow!25}{o}}\ Fill info}{39}{section*.44}%
+\contentsline {todo}{\fcolorbox {blue}{blue!25}{\textcolor {blue!25}{o}}\ Autocite not working for footnote in figure, find a workaround}{46}{section*.46}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info linkedlists}{49}{section*.47}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info stacks}{50}{section*.48}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info queues}{51}{section*.49}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info binary trees}{52}{section*.51}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info binary search trees}{53}{section*.53}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info heap}{54}{section*.54}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info hashmaps}{55}{section*.55}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info matrix}{56}{section*.56}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info slection sorting}{58}{section*.57}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info bubble sort}{59}{section*.58}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info insertion sort}{60}{section*.59}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info quick sort}{61}{section*.60}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info linear search}{62}{section*.61}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info binary search}{63}{section*.62}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Time Complexity Graph}{64}{section*.63}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info Time Complexity}{64}{section*.64}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info Chatbot Example}{70}{section*.65}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info Management Example}{72}{section*.66}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Fill info Task Planner Example}{74}{section*.67}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Naming Coneventions}{76}{section*.68}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Error Analysis}{78}{section*.69}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Packages}{79}{section*.70}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ add checkpoints along the way \textit {through} each example to link the importnat idea (decomponsing/operationalizing ideas)}{83}{section*.71}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Avi's Guest Section}{93}{section*.75}%
+\contentsline {todo}{\fcolorbox {green}{green!25}{\textcolor {green!25}{o}}\ Avi's Guest Chapter}{95}{section*.76}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ FUNC: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}{95}{section*.77}%
+\contentsline {todo}{\fcolorbox {red}{red!25}{\textcolor {red!25}{o}}\ OOPS: Maybe remove this from the book and add to follow-up. This seems a bit out of the scope of what's required}{97}{section*.78}%
