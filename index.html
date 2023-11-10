@@ -10,6 +10,17 @@
     <link rel="stylesheet" type="text/css" rel="noopener" href="style.css">
 
 </head>
+<script type="text/javascript">
+
+    var todayDate = new Date().toISOString().slice(0,10);
+    var script = document.getElementById('filedownload');
+    script.download = 'how2code_draft' + todayDate + '.pdf';
+    script.onload = function() {
+      console.log(CorrectAnswer1[0]);
+    }
+    document.head.getElementById('filedownload') = script;
+    
+</script>
 <!--Make this page mobile friendly-->
 <body class='light'>
     <div id="content">
@@ -118,7 +129,7 @@
         <br>
         <br>
         <div id='highlighted-projects' class='project-list'>
-            <a href= "./latex/how2code.pdf" 
+            <a id='filedownload' href= "./latex/how2code.pdf" 
             download="how2code_draft" 
             class='project-link'>
                 <div class='project-highlighted'>
