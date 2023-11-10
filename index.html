@@ -15,9 +15,6 @@
     var todayDate = new Date().toISOString().slice(0,10);
     var script = document.getElementById('filedownload');
     script.download = 'how2code_draft' + todayDate + '.pdf';
-    script.onload = function() {
-      console.log(CorrectAnswer1[0]);
-    }
     document.head.getElementById('filedownload') = script;
     
 </script>
